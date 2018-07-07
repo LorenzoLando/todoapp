@@ -1,8 +1,16 @@
+
+h1{
+	background-color: #2980b9;
+	color: white;
+}
+
 #container {
 	
 	width: 360px;
-	margin: 0 auto;
+	margin: 100px auto;
+	background-color: #f7f7f7;
 	border: 2px solid grey;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
 }
 
 .completed {
