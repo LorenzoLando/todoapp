@@ -22,9 +22,15 @@ $("input[type='text']").on("keypress", function(event){
 		//puliamo il campo input 
 		$(this).val("");
 		//crea nuovo li e aggiungilo allo ul
-		$("ul").append("<li><span>X</span> " +todoText+" </li>");
+		$("ul").append("<li><span><i class='fa fa-trash'></i></span> " +todoText+" </li>");
 		
 	}
+});
+
+//facciamo sparire l input quando premiamo l icona plus e ricomparire se la ri premiamo
+
+$(".fa-plus").click(function(){
+	$("input[type='text']").fadeToggle();
 });
  
 
